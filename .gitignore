@@ -1,0 +1,74 @@
+# ---------------------------
+# Global GitIgnore for Project
+# Soybean Leaf Detection (Backend + Frontend)
+# ---------------------------
+
+# ===== Python (Backend) =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pth
+*.db
+*.sqlite3
+*.log
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Allow ML model files (pt, h5)
+# (Don’t ignore them, so they get pushed to GitHub)
+
+# Ignore YOLO training runs & checkpoints
+runs/
+*.onnx
+*.tflite
+*.weights
+
+# ===== Node / React Native (Frontend) =====
+node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# ===== System files =====
+.DS_Store
+Thumbs.db
+*.pem
+
+# ===== Local environment configs =====
+.env*.local
+.env
+
+# ===== TypeScript =====
+*.tsbuildinfo
+
+# ===== VSCode =====
+.vscode/
+
+# ===== Build / Distribution =====
+build/
+dist/
