@@ -22,6 +22,7 @@ venv/
 # (Don’t ignore them, so they get pushed to GitHub)
 
 # Ignore YOLO training runs & checkpoints
+yolov5/
 runs/
 *.onnx
 *.tflite
